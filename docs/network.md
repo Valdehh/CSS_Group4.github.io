@@ -26,6 +26,6 @@ layout: default
 
 This is the network page.
 
-<button class="tablinks"><a href="{{ site.baseurl }}/docs/index">Home</a></button>
-<button class="tablinks"><a href="{{ site.baseurl }}/docs/data">Data</a></button>
-<button class="tablinks"><a href="{{ site.baseurl }}/docs/text">Text</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/index">Home</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/data">Data</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/text">Text</a></button>

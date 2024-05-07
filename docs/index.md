@@ -26,9 +26,9 @@ layout: default
 
 This is the home page.
 
-<button class="tablinks"><a href="{{ site.baseurl }}/docs/data">Data</a></button>
-<button class="tablinks"><a href="{{ site.baseurl }}/docs/network">Network</a></button>
-<button class="tablinks"><a href="{{ site.baseurl }}/docs/text">Text</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/data">Data</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/network">Network</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/text">Text</a></button>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
