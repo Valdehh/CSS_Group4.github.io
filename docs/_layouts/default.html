@@ -39,6 +39,7 @@
             background-color: #2D2D2D; /* Dark gray */
             color: #ffffff; /* White text */
             padding: 20px 0;
+            text-align: center; /* Center text and images */
         }
 
         #footer_wrap a {
@@ -46,24 +47,20 @@
             text-decoration: none; /* Removes underline */
         }
 
-        #footer_wrap img {
+        .footer-icon {
             width: 64px; /* Larger icon size */
             height: 64px;
             border: none; /* Removes border */
+            filter: invert(100%); /* Makes the images white */
         }
 
-        #footer_wrap ul {
-            list-style-type: none; /* Removes bullet points */
-            padding: 0;
-            display: flex; /* Places the list items on the same line */
-            justify-content: center; /* Centers the list items */
+        .author-container {
+            display: flex; /* Places the author names on the same line */
+            justify-content: center; /* Centers the author names */
+            gap: 20px; /* Adds some space between the author names */
         }
 
-        #footer_wrap li {
-            margin: 0 10px; /* Adds some space between the list items */
-        }
-
-        #footer_wrap p {
+        .author-name {
             margin: 0; /* Removes the default margin */
         }
     </style>
@@ -100,29 +97,23 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
         <footer class="inner">
-            <div class="flex items-center justify-center space-x-4">
-                <a href="" class="text-gray-600 no-underline">
-                    <img src="{{ site.baseurl }}/assets/images/file-text.svg" alt="Notebook">
+            <div class="icon-container">
+                <a href="">
+                    <img src="{{ site.baseurl }}/assets/images/file-text.svg" class="footer-icon" alt="Notebook">
                 </a>
-                <a href="https://github.com/Valdehh/CSS_Group_4" class="text-gray-600 no-underline">
-                    <img src="{{ site.baseurl }}/assets/images/github.svg" alt="GitHub">
+                <a href="https://github.com/Valdehh/CSS_Group_4">
+                    <img src="{{ site.baseurl }}/assets/images/github.svg" class="footer-icon" alt="GitHub">
                 </a>
-                <a href="https://docs.github.com/en/rest?apiVersion=2022-11-2" class="text-gray-600 no-underline">
-                    <img src="{{ site.baseurl }}/assets/images/hard-drive.svg" alt="Hard Drive">
+                <a href="https://docs.github.com/en/rest?apiVersion=2022-11-2">
+                    <img src="{{ site.baseurl }}/assets/images/hard-drive.svg" class="footer-icon" alt="Hard Drive">
                 </a>
-                <a href="https://github.com/Valdehh/CSS_Group_4/archive/refs/heads/main.zip" download class="text-gray-600 no-underline">
-                    <img src="{{ site.baseurl }}/assets/images/download.svg" alt="Download">
+                <a href="https://github.com/Valdehh/CSS_Group_4/archive/refs/heads/main.zip" download>
+                    <img src="{{ site.baseurl }}/assets/images/download.svg" class="footer-icon" alt="Download">
                 </a>
             </div>
-            <div class="w-full mx-auto text-center">
-                <ul class="list-reset items-center text-md py-6 list-none flex justify-center">
-                    <li class="mx-4">
-                        <p class="inline-block text-gray-600 font-semibold capitalized">Valdemar Hee Hansen</p>
-                    </li>
-                    <li class="mx-4">
-                        <p class="inline-block text-gray-600 font-semibold capitalized">Andreas Rahbeck-Palm</p>
-                    </li>
-                </ul>
+            <div class="author-container">
+                <p class="author-name">Valdemar Hee Hansen</p>
+                <p class="author-name">Andreas Rahbeck-Palm</p>
             </div>
         </footer>
     </div>
