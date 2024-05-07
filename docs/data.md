@@ -26,6 +26,6 @@ layout: default
 
 This is the data page.
 
-<button class="tablinks"><a href="index.md">Home</a></button>
-<button class="tablinks"><a href="network.md">Network</a></button>
-<button class="tablinks"><a href="text.md">Text</a></button>
+<button class="tablinks"><a href="/docs/index.md">Home</a></button>
+<button class="tablinks"><a href="/docs/network.md">Network</a></button>
+<button class="tablinks"><a href="/docs/text.md">Text</a></button>
