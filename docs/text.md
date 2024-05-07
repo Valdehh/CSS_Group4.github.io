@@ -1,24 +1,24 @@
 ---
-layout: {{ site.baseurl }}/docs/data/_layouts/default
+layout: default
 ---
 
 <style>
 .tablinks {
-    background-color: #555; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Removes the default button border */
-    padding: 10px 20px; /* Button padding */
-    text-align: center; /* Centers the text */
-    text-decoration: none; /* Removes the default link underline */
-    display: inline-block; /* Makes the buttons sit side by side */
-    font-size: 16px; /* Button text size */
-    margin: 4px 2px; /* Button margin */
-    cursor: pointer; /* Changes the cursor when you hover over the button */
-    transition-duration: 0.4s; /* Adds a transition effect when you hover over the button */
+  background-color: #2A3132;
+  color: #DFE9ED;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
 .tablinks:hover {
-    background-color: #777; /* Changes the background color when you hover over the button */
+  background-color: #336B87;
 }
 </style>
 
