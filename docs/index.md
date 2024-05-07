@@ -2,6 +2,46 @@
 layout: default
 ---
 
+<div class="tab">
+  <button class="tablinks" onclick="openPage('Data', this)" id="defaultOpen">Data</button>
+  <button class="tablinks" onclick="openPage('Network', this)">Network</button>
+  <button class="tablinks" onclick="openPage('Text', this)">Text</button>
+</div>
+
+<div id="Data" class="tabcontent">
+  <h1>Data</h1>
+  <p>Data content goes here.</p>
+</div>
+
+<div id="Network" class="tabcontent">
+  <h1>Network</h1>
+  <p>Network content goes here.</p>
+</div>
+
+<div id="Text" class="tabcontent">
+  <h1>Text</h1>
+  <p>Text content goes here.</p>
+</div>
+
+<script>
+function openPage(pageName, elmnt) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = "#ccc";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
