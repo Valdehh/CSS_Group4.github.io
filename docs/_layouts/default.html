@@ -36,7 +36,7 @@
 
         /* Footer Styles */
         #footer_wrap {
-            background-color: #2D2D2D; /* Dark gray */
+            background-color: #212121; /* Dark gray */
             color: #ffffff; /* White text */
             padding: 20px 0;
             text-align: center; /* Center text and images */
@@ -45,6 +45,9 @@
         #footer_wrap a {
             color: #ffffff; /* White text */
             text-decoration: none; /* Removes underline */
+            outline: none; /* Removes outline */
+            display: inline-block; /* Allows for margin */
+            margin: 0 10px; /* Adds horizontal margin between images */
         }
 
         .footer-icon {
@@ -57,7 +60,7 @@
         .author-container {
             display: flex; /* Places the author names on the same line */
             justify-content: center; /* Centers the author names */
-            gap: 20px; /* Adds some space between the author names */
+            gap: 40px; /* Increases gap between the author names */
         }
 
         .author-name {
