@@ -5,6 +5,10 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
 {% seo %}
@@ -12,8 +16,8 @@
 
     <style>
         .tablinks {
-          background-color: #2A3132;
-          color: white;
+          background-color: #11549c;
+          color: #FFFFFF;
           border: none;
           padding: 10px 20px;
           text-align: center;
@@ -27,7 +31,7 @@
         }
     
         .tablinks:hover {
-          background-color: #336B87;
+          background-color: #1972d2;
         }
       </style>
   </head>
@@ -67,88 +71,32 @@
       </section>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-400 shadow">
-        <div class="container max-w-4xl mx-auto flex py-8">
-
-            <div class="w-full mx-auto flex flex-col">
-                <div class="flex w-full">
-                    <div class="px-8 mx-auto">
-                        <ul class="pt-3 list-none px-0 flex">
-                            <li>
-                                <a class="text-gray-600 no-underline py-2" href="{{ site.notebook }}"><i
-                                        data-feather="file-text" class="footer-icon"></i></a>
-                            </li>
-                            <li>
-                                <a class="text-gray-600 no-underline py-2" href="{{ site.github }}"><i
-                                        data-feather="github" class="footer-icon"></i></a>
-                            </li>
-                            <li>
-                                <a class="text-gray-600 no-underline py-2" href="{{ site.data }}"><i
-                                        data-feather="hard-drive" class="footer-icon"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="w-full mx-auto text-center">
-                    <ul class="list-reset items-center text-md py-6 list-none flex">
-                        {% for author in site.authors %}
-                        <li class="mx-auto">
-                            <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">{{ author }}</p>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <a href="" class="text-gray-600 no-underline">
+                    <i data-feather="book-open"></i>
+                </a>
+                <a href="https://github.com/Valdehh/CSS_Group_4" class="text-gray-600 no-underline">
+                    <i data-feather="github"></i>
+                </a>
+                <a href="https://docs.github.com/en/rest?apiVersion=2022-11-2" class="text-gray-600 no-underline">
+                    <i data-feather="hard-drive"></i>
+                </a>
             </div>
-
-        </div>
-    </footer>
-
-    <!-- Progressive bar script -->
-    <script>
-        /* Progress bar */
-        //Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-        var h = document.documentElement,
-            b = document.body,
-            st = 'scrollTop',
-            sh = 'scrollHeight',
-            progress = document.querySelector('#progress'),
-            scroll;
-        var scrollpos = window.scrollY;
-        var header = document.getElementById("header");
-        var navcontent = document.getElementById("nav-content");
-    
-        document.addEventListener('scroll', function () {
-    
-        /*Refresh scroll % width*/
-        scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-        progress.style.setProperty('--scroll', scroll + '%');
-    
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
-    
-        if (scrollpos > 10) {
-            header.classList.add("bg-white");
-            header.classList.add("shadow");
-            navcontent.classList.remove("bg-gray-100");
-            navcontent.classList.add("bg-white");
-        } else {
-            header.classList.remove("bg-white");
-            header.classList.remove("shadow");
-            navcontent.classList.remove("bg-white");
-            navcontent.classList.add("bg-gray-100");
-        }
-    
-        });
-    
-        //Javascript to toggle the menu
-        document.getElementById('nav-toggle').onclick = function () {
-        document.getElementById("nav-content").classList.toggle("hidden");
-        }
-        feather.replace()
-    </script>
-
+            <div class="w-full mx-auto text-center">
+                <ul class="list-reset items-center text-md py-6 list-none flex">
+                    <li class="mx-auto">
+                        <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Valdemar Hee Hansen</p>
+                    </li>
+                    <li class="mx-auto">
+                        <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Valdemar Hee Hansen</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
+
   </body>
 </html>
