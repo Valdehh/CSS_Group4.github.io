@@ -33,6 +33,41 @@
             color: #ffffff; /* White text */
             text-decoration: none; /* Removes underline */
         }
+
+        /* Footer Styles */
+        #footer_wrap {
+            background-color: #2D2D2D; /* Dark gray */
+            color: #ffffff; /* White text */
+            padding: 20px 0;
+        }
+
+        #footer_wrap a {
+            color: #ffffff; /* White text */
+            text-decoration: none; /* Removes underline */
+        }
+
+        #footer_wrap a:hover {
+            color: #4A90D9; /* Slate blue on hover */
+        }
+
+        #footer_wrap img {
+            width: 24px; /* Icon size */
+            height: 24px;
+        }
+
+        #footer_wrap ul {
+            list-style-type: none; /* Removes bullet points */
+            padding: 0;
+        }
+
+        #footer_wrap li {
+            display: inline; /* Displays the list items on the same line */
+            margin: 0 10px; /* Adds some space between the list items */
+        }
+
+        #footer_wrap p {
+            margin: 0; /* Removes the default margin */
+        }
     </style>
   </head>
 
@@ -65,47 +100,33 @@
     </div>
 
     <!-- FOOTER  -->
-    <footer class="bg-white border-t border-gray-400 shadow">
-        <div class="container max-w-4xl mx-auto flex py-8">
-            <div class="w-full mx-auto flex flex-col">
-                <div class="flex w-full">
-                    <div class="px-8 mx-auto">
-                        <ul class="pt-3 list-none px-0 flex">
-                            <li>
-                                <a href="" class="text-gray-600 no-underline">
-                                    <img src="{{ site.baseurl }}/assets/images/file-text.svg" alt="Notebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/Valdehh/CSS_Group_4" class="text-gray-600 no-underline">
-                                    <img src="{{ site.baseurl }}/assets/images/github.svg" alt="GitHub">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.github.com/en/rest?apiVersion=2022-11-28" class="text-gray-600 no-underline">
-                                    <img src="{{ site.baseurl }}/assets/images/hard-drive.svg" alt="Hard Drive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/Valdehh/CSS_Group_4/archive/refs/heads/main.zip" download class="text-gray-600 no-underline">
-                                    <img src="{{ site.baseurl }}/assets/images/download.svg" alt="Download">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full mx-auto text-center">
-                    <ul class="list-reset items-center text-md py-6 list-none flex">
-                        <li class="mx-auto">
-                            <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Valdemar Hee Hansen</p>
-                        </li>
-                        <li class="mx-auto">
-                            <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Andreas Rahbeck-Palm</p>
-                        </li>
-                    </ul>
-                </div>
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+            <div class="flex items-center justify-center space-x-4">
+                <a href="" class="text-gray-600 no-underline">
+                    <img src="{{ site.baseurl }}/assets/images/file-text.svg" alt="Notebook">
+                </a>
+                <a href="https://github.com/Valdehh/CSS_Group_4" class="text-gray-600 no-underline">
+                    <img src="{{ site.baseurl }}/assets/images/github.svg" alt="GitHub">
+                </a>
+                <a href="https://docs.github.com/en/rest?apiVersion=2022-11-2" class="text-gray-600 no-underline">
+                    <img src="{{ site.baseurl }}/assets/images/hard-drive.svg" alt="Hard Drive">
+                </a>
+                <a href="https://github.com/Valdehh/CSS_Group_4/archive/refs/heads/main.zip" download class="text-gray-600 no-underline">
+                    <img src="{{ site.baseurl }}/assets/images/download.svg" alt="Download">
+                </a>
             </div>
-        </div>
-    </footer>
+            <div class="w-full mx-auto text-center">
+                <ul class="list-reset items-center text-md py-6 list-none flex justify-center">
+                    <li class="mx-4">
+                        <p class="inline-block text-gray-600 font-semibold capitalized">Valdemar Hee Hansen</p>
+                    </li>
+                    <li class="mx-4">
+                        <p class="inline-block text-gray-600 font-semibold capitalized">Andreas Rahbeck-Palm</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
   </body>
 </html>
