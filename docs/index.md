@@ -2,45 +2,33 @@
 layout: default
 ---
 
-<div class="tab">
-  <button class="tablinks" onclick="openPage('Data', this)" id="defaultOpen">Data</button>
-  <button class="tablinks" onclick="openPage('Network', this)">Network</button>
-  <button class="tablinks" onclick="openPage('Text', this)">Text</button>
-</div>
-
-<div id="Data" class="tabcontent">
-  <h1>Data</h1>
-  <p>Data content goes here.</p>
-</div>
-
-<div id="Network" class="tabcontent">
-  <h1>Network</h1>
-  <p>Network content goes here.</p>
-</div>
-
-<div id="Text" class="tabcontent">
-  <h1>Text</h1>
-  <p>Text content goes here.</p>
-</div>
-
-<script>
-function openPage(pageName, elmnt) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = "#ccc";
+<style>
+.tablinks {
+    background-color: #555; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes the default button border */
+    padding: 10px 20px; /* Button padding */
+    text-align: center; /* Centers the text */
+    text-decoration: none; /* Removes the default link underline */
+    display: inline-block; /* Makes the buttons sit side by side */
+    font-size: 16px; /* Button text size */
+    margin: 4px 2px; /* Button margin */
+    cursor: pointer; /* Changes the cursor when you hover over the button */
+    transition-duration: 0.4s; /* Adds a transition effect when you hover over the button */
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+.tablinks:hover {
+    background-color: #777; /* Changes the background color when you hover over the button */
+}
+</style>
+
+# Home
+
+This is the home page.
+
+<button class="tablinks"><a href="data.md">Data</a></button>
+<button class="tablinks"><a href="network.md">Network</a></button>
+<button class="tablinks"><a href="text.md">Text</a></button>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
