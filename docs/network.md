@@ -26,6 +26,6 @@ layout: /_layouts/default
 
 This is the network page.
 
-<button class="tablinks"><a href="/docs/index.md">Home</a></button>
-<button class="tablinks"><a href="/docs/data.md">Data</a></button>
-<button class="tablinks"><a href="/docs/text.md">Text</a></button>
+<button class="tablinks"><a href="./index.md">Home</a></button>
+<button class="tablinks"><a href="./data.md">Data</a></button>
+<button class="tablinks"><a href="./text.md">Text</a></button>

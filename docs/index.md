@@ -26,9 +26,9 @@ layout: /_layouts/default
 
 This is the home page.
 
-<button class="tablinks"><a href="/docs/data.md">Data</a></button>
-<button class="tablinks"><a href="/docs/network.md">Network</a></button>
-<button class="tablinks"><a href="/docs/text.md">Text</a></button>
+<button class="tablinks"><a href="./data.md">Data</a></button>
+<button class="tablinks"><a href="./network.md">Network</a></button>
+<button class="tablinks"><a href="./text.md">Text</a></button>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
