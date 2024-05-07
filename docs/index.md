@@ -5,7 +5,7 @@ layout: default
 <style>
 .tablinks {
   background-color: #2A3132;
-  color: #DFE9ED;
+  color: white;
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -15,6 +15,7 @@ layout: default
   margin: 4px 2px;
   cursor: pointer;
   transition-duration: 0.4s;
+  border-radius: 12px; /* This makes the button corners rounded */
 }
 
 .tablinks:hover {
@@ -31,8 +32,6 @@ This is the home page.
 <button class="tablinks"><a href="{{ site.baseurl }}/text">Text</a></button>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
 

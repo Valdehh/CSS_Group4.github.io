@@ -6,3 +6,11 @@ description: Website for the final project in computational social science 02467
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-slate
+
+# Footer details
+notebook: /
+github: https://github.com/Valdehh/CSS_Group_4
+data: https://docs.github.com/en/rest?apiVersion=2022-11-28
+authors:
+  - Valdemar Hee Hansen
+  - Andreas Rahbeck-Palm
