@@ -5,13 +5,6 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <!-- Feather Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-        feather.replace()
-    </script>
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
 {% seo %}
@@ -71,49 +64,31 @@
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-        <footer class="inner">
-            {% if site.show_downloads %}
-            <section id="downloads">
-                <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-                <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-            {% endif %}
-        </footer>
-        <footer class="inner flex items-center justify-between">
-            <div class="container max-w-4xl mx-auto flex py-8">
-                <div class="w-full mx-auto flex flex-col">
-                    <div class="flex w-full">
-                        <div class="px-8 mx-auto">
-                            <ul class="pt-3 list-none px-0 flex">
-                                <li>
-                                    <a class="text-gray-600 no-underline py-2" href=""><i
-                                            data-feather="file-text" class="footer-icon"></i></a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 no-underline py-2" href="https://github.com/Valdehh/CSS_Group_4"><i
-                                            data-feather="github" class="footer-icon"></i></a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 no-underline py-2" href="https://docs.github.com/en/rest?apiVersion=2022-11-28"><i
-                                            data-feather="hard-drive" class="footer-icon"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="w-full mx-auto text-center">
-                        <ul class="list-reset items-center text-md py-6 list-none flex">
-                            <li class="mx-auto">
-                                <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Valdemar Hee Hansen</p>
-                            </li>
-                            <li class="mx-auto">
-                                <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Andreas Rahbeck-Palm</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <footer>
+        <div class="flex items-center space-x-4">
+            <a href="" class="text-gray-600 no-underline">
+                <img src="assets/images/notebook.png" alt="Notebook">
+            </a>
+            <a href="https://github.com/Valdehh/CSS_Group_4" class="text-gray-600 no-underline">
+                <img src="assets/images/github.png" alt="GitHub">
+            </a>
+            <a href="https://docs.github.com/en/rest?apiVersion=2022-11-2" class="text-gray-600 no-underline">
+                <img src="assets/images/hard-drive.png" alt="Hard Drive">
+            </a>
+            <a href="https://github.com/Valdehh/CSS_Group_4/archive/refs/heads/main.zip" download class="text-gray-600 no-underline">
+                <img src="assets/images/download.png" alt="Download">
+            </a>
+        </div>
+        <div class="w-full mx-auto text-center">
+            <ul class="list-reset items-center text-md py-6 list-none flex">
+                <li class="mx-auto">
+                    <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Valdemar Hee Hansen</p>
+                </li>
+                <li class="mx-auto">
+                    <p class="inline-block text-gray-600 mx-4 font-semibold capitalized">Andreas Rahbeck-Palm</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
   </body>
 </html>
