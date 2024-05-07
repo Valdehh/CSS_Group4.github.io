@@ -1,5 +1,5 @@
 ---
-layout: /_layouts/default
+layout: {{ site.baseurl }}/docs/data/_layouts/default
 ---
 
 <style>
@@ -26,6 +26,6 @@ layout: /_layouts/default
 
 This is the network page.
 
-<button class="tablinks"><a href="./index.md">Home</a></button>
-<button class="tablinks"><a href="./data.md">Data</a></button>
-<button class="tablinks"><a href="./text.md">Text</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/docs/index">Home</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/docs/data">Data</a></button>
+<button class="tablinks"><a href="{{ site.baseurl }}/docs/text">Text</a></button>
