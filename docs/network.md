@@ -6,11 +6,11 @@ layout: default
 
 In this section we will go over the created networks and in depth analysis of the GitHub contributor network and based on the analysis draw conclusions.
 
-Based on the data collected of the GitHub contributations (To read about data collection details click here: [Data](data.md)) a graph was constructed. To ensure a very informative network we ensured that all ensured that an edge only was created people had collaborated on multiple repositories. This ensures that the relationship between the persons are stronger and provides a less noisy understanding of the graph. Each person in the graph was given their company they worked for as attribute if it was listed. 
+Based on the data collected of the GitHub contributations (To read about data collection details click here: [Data](data.md)) a graph was constructed. To ensure a very informative network we ensured that all ensured that an edge only was created people had collaborated on multiple repositories. This ensures that the relationship between the persons is stronger and provides a less noisy understanding of the graph. Each person in the graph was given their company they worked for as attribute if it was listed. 
 
 ## Basic Network Analysis 
 
-
+The dependabot is a bot provided by git to help git repositories with varias things such as, **dependency dpdates**, **Security Vulnerabilities** and **Testing**. This analysis helped us indecate how very popular this tool is for many of the top repositories, however as this network analysis want to investigate the real git landscape and potetial commication pipelines.
 
 To emphasize the how the dependabot is influencing the network structure and the size of the hub, we present a figure containing both the network structure with and without the dependabot. To further illustrate how the dependabot corrupt the network, the size of nodes are directly related to the degree of the node. 
 
