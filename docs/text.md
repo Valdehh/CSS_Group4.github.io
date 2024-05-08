@@ -6,10 +6,9 @@ layout: default
 
 This is the text page.
 
-<figure>
-    <figcaption style="font-size: 2em;"><strong>Wordcloud for tokens and collocations</strong></figcaption>
-    <img src="assets/images/wordcloud_github.svg" alt="wordcloud_github">
-</figure>
+![wordcloud_github](assets/images/wordcloud_github.svg)
+
+![wordcloud](assets/images/wordcloud.svg)
 
 <figure>
     <figcaption style="font-size: 2em;"><strong>Wordcloud for tokens and collocations</strong></figcaption>
