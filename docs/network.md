@@ -13,8 +13,7 @@ We constructed a graph using...
 The graph is illustrated with the node size corresponding to the node degree. 
 
 <figure>
-  <figcaption style="font-size: 2em;"><<strong>Title: This is the title</strong></figcaption>
-  <figcaption>Subtitle: This is the subtitle</figcaption>
+  <figcaption style="font-size: 2em;"><strong>GitHub Contributors Networks</strong></figcaption>
   <img src="assets/images/graph_size.png" alt="NS1">
   <figcaption>Network Graph - Node size corresponding to node degree</figcaption>
   <img src="assets/images/graph_no_bot_size.png" alt="NS2">
