@@ -6,13 +6,15 @@ layout: default
 
 In this section we will go over the created networks and in depth analysis of the GitHub contributor network and based on the analysis draw conclusions.
 
+Based on the data collected of the GitHub contributations (To read about data collection details click here: [Data](data.md)) a graph was constructed. To ensure a very informative network we ensured that all ensured that an edge only was created people had collaborated on multiple repositories. This ensures that the relationship between the persons are stronger and provides a less noisy understanding of the graph. Each person in the graph was given their company they worked for as attribute if it was listed. 
+
 ## Basic Network Analysis 
 
-Based on the data collected of the GitHub contributations (to read about data collection details click here: [Data](data.md))
+
 
 To emphasize the how the dependabot is influencing the network structure and the size of the hub, we present a figure containing both the network structure with and without the dependabot. To further illustrate how the dependabot corrupt the network, the size of nodes are directly related to the degree of the node. 
 
-<figure>
+<figure id="fig1">
   <figcaption style="font-size: 2em;"><strong>GitHub Contributors Networks</strong></figcaption>
   <img src="assets/images/graph_size.png" alt="NS1">
   <figcaption><em>Network Graph - Node size corresponding to node degree</em></figcaption>
@@ -22,4 +24,4 @@ To emphasize the how the dependabot is influencing the network structure and the
 <br>  
 </figure>
 
-This illustration highlights that this bot node is clearly an outlier. This makes sense because it's a GitHub-provided bot designed to help repositories with tasks like monitoring for security vulnerabilities, which is especially beneficial for large companies that own many of these great repositories.
+[Figure 1](#fig1) illustration highlights that this bot node is clearly an outlier. This makes sense because it's a GitHub-provided bot designed to help repositories with tasks like monitoring for security vulnerabilities, which is especially beneficial for large companies that own many of these great repositories.
