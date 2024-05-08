@@ -12,6 +12,12 @@ We constructed a graph using...
 
 The graph is illustrated with the node size corresponding to the node degree. 
 
-![Network Graph - Node size corresponding to node degree](assets/images/graph_size.png)
+<figure>
+  <figcaption><strong>Github Contributor Networks</strong></figcaption>
+  <img src="assets/images/graph_size.png" alt="NS1">
+  <figcaption>Network Graph 1 - Node size corresponding to node degree</figcaption>
+  <img src="assets/images/graph_no_bot_size.png" alt="NS2">
+  <figcaption>Network Graph without the bot - Node size corresponding to node degree</figcaption>
+</figure>
 
 This illustration highlights that this bot node is clearly an outlier. This makes sense because it's a GitHub-provided bot designed to help repositories with tasks like monitoring for security vulnerabilities, which is especially beneficial for large companies that own many of these great repositories.
