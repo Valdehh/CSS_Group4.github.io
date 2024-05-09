@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Data
-To collect the data API calls was made to the base URL https://api.github.com. Firstly, search calls were made to repositories who contained topics of Machine learning and Deep learning. This provided us with 1510 of the most popular repositories within these two categories sorted by GitHub stars. 
+To collect the data API calls was made to the base URL https://api.github.com. Firstly, search calls were made to repositories who contained topics of Machine learning and Deep learning. This provided us with 1509 of the most popular repositories within these two categories sorted by GitHub stars. 
 
 Then using the same Base URL we called for the repositories to get the owners and all contributors. Based on the API calls a dataframe is created containing:
 
