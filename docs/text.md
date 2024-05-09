@@ -24,9 +24,11 @@ For the analysis of the now clean text, we first tokenized the text and then rem
 From [figure 3](#fig_freq) we see that many of the expected basic terms from machine learning and deep learning appear with high frequencies. Most interestingly, we see that the two topics that the repositories were filtered on appear as the only two collocations among the top 20 tokens or collocations.
 
 ## Advanced text analysis
-For a more in-depth analysis of prominent tokens or collocations in the text, a TF-IDF analysis was performed. The tokens and collocations are sorted based on TF-IDF score from highest two lowest. From the top 200 tokens or collocations based on TF-IDF scores a word cloud in the shape of the GitHub icon is constructed and shown in [figure 4](#fig_wordcloud).
+For a more in-depth analysis of prominent tokens or collocations in the text, a TF-IDF analysis was performed. The tokens and collocations are sorted based on the TF-IDF score from highest to lowest. From the top 200 tokens or collocations based on TF-IDF scores, a word cloud in the shape of the GitHub icon is constructed and shown in [figure 4](#fig_wordcloud).
 
 <figure id="fig_wordcloud">
     <img src="assets/images/wordcloud_github_transparent.png" alt="wordcloud_github" style="border: none; background: transparent;" width="1800">
     <figcaption><strong>Figure 4. - Word cloud of the top 200 tokens or collocations based on TF-IDF scores</strong></figcaption>
 </figure>
+
+From [Figure 4](#fig_wordcloud) we see that the highest-scored tokens or collocations contain many of the same words as in [Figure 3](#fig_freq). Collocations are not as prominent anymore, but two of the largest repositories based on stars namely _tensorflow_ and _pytorch_ appear, which is logical since they are extremely popular modules. Additionally, more of the expected terms used in the field of machine learning and deep learning are quite prominent.
