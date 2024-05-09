@@ -22,7 +22,7 @@ To emphasize the how the dependabot is influencing the network structure and the
   <figcaption><em>Network Graph - Node size corresponding to node degree</em></figcaption>
   <img src="assets/images/graph_no_bot_size.png" alt="NS2">
   <figcaption><em>Network Graph without the bot - Node size corresponding to node degree</em></figcaption>
-  <figcaption><strong>Fig1. - This is the network plotted with and without dependabot.</strong></figcaption>
+  <figcaption><strong>Figure 1. This is the network plotted with and without dependabot.</strong></figcaption>
 <br>  
 </figure>
 
@@ -31,8 +31,14 @@ To emphasize the how the dependabot is influencing the network structure and the
 ## Advanced Graph Analysis
 To investigate how these very active developers or organizational accounts are connected two assortativity analysis where conducted. The degree assortativity is -0.05 as it is close to 0 it alludes to the network being close to randomly connected between big and small nodes. The attribute assortativity coefficient when performed for company is also 0.01 which alludes to random connections accross companies, however almost half of the users had not specified an organization which of cause pushes the assortativity towards 0. 
 
-Cluster coefficient 0.2 which is a low coefficient which alludes to a hierarchical structure, this is typical in professional networks as we have organizational hubs with a lot of connected employees. 
+<figure id="fig2">
+  <img src="assets/images/degree_attribute_assortativity.png" alt="Degree Attribute Assortativity">
+  <figcaption><strong>Figure 2. Degree Attribute Assortativity</strong></figcaption>
+</figure>
 
-![degree_attribute_assortativity](assets/images/degree_attribute_assortativity.png)
 
+[Figure 2](#fig2)  shows that in both cases the score is significant, which means that hubs are generally more connected to smaller nodes as also visualized in [Figure 1](#fig1). Furthermore, we see that if users work in the same company, they are more likely to be on repositories together as expected.
 
+The networks cluster coefficient 0.2 which is a low coefficient and alludes to a hierarchical structure. We can hereby see that these hubs of hyperactive users who contributes to many repositories with specific properties. This could both be due mix between to people being hyperactive in certain open-source project and organizations like TensorFlow having projects connected to specific members of set organizations.
+
+To further illustrate how interconnected this open-source collaboration network is we computed the average shortest path in the giant component. The average shortest path is around 5 which upholds the small world principal, this alludes to that trends within repositories are likely to be spread very fast. An example of a trend spreading like wildfire on GitHub and computer science in general is diffusion models which has become extremely popular the last few years.
