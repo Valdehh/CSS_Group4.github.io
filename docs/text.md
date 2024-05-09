@@ -19,7 +19,7 @@ In this section, we will focus on text analysis for the individual README.md inc
 For the analysis of the now clean text, we first tokenized the text and then removed stopwords from it. Based on these tokens the possible bigrams and their frequency were computed. To determine possible collocations a chi-squared test was performed on the bigrams. In total, across all repositories, a total of 553 collocations were found. From hence on the registered collocations should be recognized as one term, and therefore the clean text was tokenized once more with all the collocations tokenized similarly to any other token. Based on this new tokenization the 20 most common tokens or collocations were found and displayed in [figure 3](#fig_freq).
 <figure id="fig_freq">
     <img src="assets/images/token_collo_freq_transparent.png" alt="token_collo_freq" style="border: none; background: transparent;">
-    <figcaption><strong>Fig1. - The 20 most common tokens and collocations</strong></figcaption>
+    <figcaption><strong>Figure 3. - The 20 most common tokens and collocations</strong></figcaption>
 </figure>
 From [figure 3](#fig_freq) we see that many of the expected basic terms from machine learning and deep learning appear with high frequencies. Most interestingly, we see that the two topics that the repositories were filtered on appear as the only two collocations among the top 20 tokens or collocations.
 
@@ -28,5 +28,5 @@ For a more in-depth analysis of prominent tokens or collocations in the text, a 
 
 <figure id="fig_wordcloud">
     <img src="assets/images/wordcloud_github_transparent.png" alt="wordcloud_github" style="border: none; background: transparent;" width="1800">
-    <figcaption><strong>Fig2. - Word cloud of the top 200 tokens or collocations based on TF-IDF scores</strong></figcaption>
+    <figcaption><strong>Figure 4. - Word cloud of the top 200 tokens or collocations based on TF-IDF scores</strong></figcaption>
 </figure>
