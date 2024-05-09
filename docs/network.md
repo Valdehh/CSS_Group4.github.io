@@ -33,5 +33,6 @@ To investigate how these very active developers or organizational accounts are c
 
 Cluster coefficient 0.2 which is a low coefficient which alludes to a hierarchical structure, this is typical in professional networks as we have organizational hubs with a lot of connected employees. 
 
+![degree_attribute_assortativity](assets\images\degree_attribute_assortativity.png)
 
 
