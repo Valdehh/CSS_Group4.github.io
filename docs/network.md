@@ -3,6 +3,16 @@ layout: default
 ---
 
 # Network
+
+## Table of Contents
+
+- [Network](#network)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Basic Network Analysis](#basic-network-analysis)
+  - [Advanced Graph Analysis](#advanced-graph-analysis)
+
+## Introduction
 In this section we will go over the created networks and in depth analysis of the GitHub contributor network and based on the analysis draw conclusions.
 
 Based on the data collected of the GitHub contributations (To read about data collection details click here: [Data](data.md)) a graph was constructed. To ensure a very informative network we ensured that all ensured that an edge only was created people had collaborated on multiple repositories. This ensures that the relationship between the persons is stronger and provides a less noisy understanding of the graph. Each person in the graph was given their company they worked for as attribute if it was listed. 
