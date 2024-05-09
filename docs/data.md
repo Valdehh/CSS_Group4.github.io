@@ -18,4 +18,4 @@ Then using the same Base URL we called for the repositories to get the owners an
   <li>Status code</li>
 </ul>
 
-Number of unique companies: 40443
+Furthermore, a data frame is created linking each contributor to a company. As it is open-source repositories meaning we have a lot of private accounts we this attribute is missing. If a contributor has not indicated a company a unique index was given to set contributor. As many companies was spelled different and the large number of empty company fields we ended up with 17349 unique companies in the network.
