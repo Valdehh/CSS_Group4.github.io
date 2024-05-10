@@ -2,9 +2,10 @@
 layout: default
 ---
 
-# Home
+# Exploring the collaboration landscape of leading machine- and deep-learning Github repositories
 
-This is the home page.
+Our project aims to analyze the collaborative networks within the most prominent GitHub repositories related to deep learning and machine learning. By examining the connections between collaborators, we seek to uncover patterns of collaboration, identify key topics/subjects, and understand the flow of ideas within these communities.
+
 
 
 
