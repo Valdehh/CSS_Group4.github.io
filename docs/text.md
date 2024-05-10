@@ -13,10 +13,10 @@ layout: default
   - [Advanced text analysis](#advanced-text-analysis)
 
 ## Introduction and preprocessing
-In this section, we will focus on text analysis for the individual README.md included in each of the repositories. Some of the repositories have been filtered out since their README.md does not contain any English. The result of filtering out non-English repositories is going from 1509 total repositories to 1453. Furthermore, the files have been cleaned by removing parentheses, angle and square brackets, and the text inside of them. Additionally, URLs, HTML entities, Markdown syntax, code block, and inline code have been removed. Lastly, all digits, mathematical symbols, and punctuation have been cleaned out and the resulting text has been converted to lowercase.
+In this section, we will focus on text analysis for the individual README.md included in each of the repositories. Some of the repositories have been filtered out since their README.md does not contain any English. The result of filtering out non-English repositories is going from 1509 total repositories to 1450. Furthermore, the files have been cleaned by removing parentheses, angle and square brackets, and the text inside of them. Additionally, URLs, HTML entities, Markdown syntax, code block, and inline code have been removed. Lastly, all digits, mathematical symbols, and punctuation have been cleaned out and the resulting text has been converted to lowercase.
 
 ## Text analysis
-For the analysis of the now clean text, we first tokenized the text and then removed stopwords from it. Based on these tokens the possible bigrams and their frequency were computed. To determine possible collocations a χ² test was performed on the bigrams. In total, across all repositories, a total of 553 collocations were found. The 20 most frequent collocations found are displayed in [figure 3](#fig_collo_freq).
+For the analysis of the now clean text, we first tokenized the text and then removed stopwords from it. Based on these tokens the possible bigrams and their frequency were computed. To determine possible collocations a χ² test was performed on the bigrams. In total, across all repositories, a total of 546 collocations were found. The 20 most frequent collocations found are displayed in [figure 3](#fig_collo_freq).
 <figure id="fig_collo_freq">
     <img src="assets/images/collo_freq_transparent.png" alt="collo_freq" style="border: none; background: transparent;">
     <figcaption><strong>Figure 3. - The 20 most common collocations</strong></figcaption>
