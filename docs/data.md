@@ -16,4 +16,4 @@ Then using the same Base URL we called for the repositories to get the owners an
 - Repository Stargazer count
 - Status code
 
-Furthermore, a data frame is created linking each contributor to a company. As it is open-source repositories meaning we have a lot of private accounts we this attribute is missing. If a contributor has not indicated a company a unique index was given to set contributor. As many companies was spelled different and the large number of empty company fields we ended up with 17349 unique companies in the network.
+Furthermore, a data frame is created linking each contributor to a company. The data used in this project is ready made data, it is expressed as the data is collected from open-source repositories resulting in a large portion of the accounts are private. This results in the company attribute is missing for a large part of the data and that companies often are spelled differently. If a contributor has not indicated a company a unique index was given to set contributor. As many companies was spelled different and the large number of empty company fields we ended up with 17349 unique companies in the network.
