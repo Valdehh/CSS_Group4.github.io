@@ -10,10 +10,8 @@ On this webpage you can gain insight in the collaborative GitHub landscape of th
 
 Feel free to navigate to the desired content:
 
-<h2>Table of Contents</h2>
-<ul>
-  <li><a href="data.md">Data Analysis</a></li>
-  <li><a href="network.md">Network Analysis</a></li>
-  <li><a href="text.md">Text Analysis</a></li>
-</ul>
+- Table of conetets
+  - [Data Analysis](data.md)
+  - [Network Analysis](network.md)
+  - [Text Analysis](text.md)
 
